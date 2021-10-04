@@ -2,7 +2,7 @@
   "name": "dashboard-frontend",
   "version": "0.0.0",
   "scripts": {
-    "start": "vite --open",
+    "start": "vite preview",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
