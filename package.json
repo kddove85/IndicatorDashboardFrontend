@@ -2,7 +2,7 @@
   "name": "dashboard-frontend",
   "version": "0.0.0",
   "scripts": {
-    "start": "vue-cli-service serve",
+    "start": "vite",
     "dev": "vite",
     "build": "vue-cli-service build",
     "serve": "vite preview"
