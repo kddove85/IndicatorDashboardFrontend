@@ -4,7 +4,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vue-cli-service build",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
