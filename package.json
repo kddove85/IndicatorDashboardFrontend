@@ -2,7 +2,7 @@
   "name": "dashboard-frontend",
   "version": "0.0.0",
   "scripts": {
-    "start": "vite --port 80 --host",
+    "start": "vue-cli-service serve",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
