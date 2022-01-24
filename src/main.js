@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './assets/router'
+import Navbar from "./assets/components/NavBar.vue"
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.component('nav-bar', Navbar)
+app.mount('#app')
