@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Presidential Approval Rating at Time of Leaving Office</h1>
+        <h2>Presidential Approval Rating at Time of Leaving Office</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

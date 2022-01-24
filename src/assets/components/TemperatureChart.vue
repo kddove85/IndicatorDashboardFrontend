@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Deportation</h2>
+        <h2>Global Land and Ocean Temperature Anomalies</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>
@@ -8,12 +8,12 @@
             <LineChart ref="lineRef" :chartData="testData" :options="options" />
         </div>
     </div>
-    <p>Source: Department of Homeland Security</p>
+    <p>Source: National Centers for Environmental Information</p>
     <br/>
 </template>
 
 <script>
-import { getDeportation } from '../../services/DashboardApi.js';
+import { getTemperature } from '../../services/DashboardApi.js';
 import { computed, defineComponent, ref, onMounted } from 'vue';
 import { LineChart } from 'vue-chart-3';
 
@@ -27,10 +27,10 @@ export default defineComponent({
     let loading = ref(true)
 
     onMounted(async() => {
-        data.value = await getDeportation();
+        data.value = await getTemperature();
 
         dataValues.value = data.value.map(item => item.value)
-        dataLabels.value = data.value.map(item => item.year)
+        dataLabels.value = data.value.map(item => item.date)
         loading.value = false;
     })
     const lineRef = ref();
@@ -52,9 +52,10 @@ export default defineComponent({
       labels: dataLabels.value,
       datasets: [
         {
-          label: 'Deportation',
+          label: 'Average Surface Temperature in Celsius',
           data: dataValues.value,
           backgroundColor: ['#0000FF'],
+          tension: 0.5,
         },
       ],
     }));

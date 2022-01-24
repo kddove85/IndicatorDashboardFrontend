@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>National Average Price for <b>Regular</b> Gas Per Gallon in USD by Month</h1>
+        <h2>National Average Price for <b>Regular</b> Gas Per Gallon in USD by Month</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

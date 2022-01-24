@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Department Spending USD in Billions</h1>
+        <h2>Department Spending USD in Billions</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

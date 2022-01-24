@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Change in Inflation Month to Month</h1>
+        <h2>Change in Inflation Month to Month</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

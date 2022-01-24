@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>National Unemployment %</h1>
+        <h2>National Unemployment %</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

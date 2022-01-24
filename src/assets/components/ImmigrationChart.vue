@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Immigration</h1>
+        <h2>Immigration</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

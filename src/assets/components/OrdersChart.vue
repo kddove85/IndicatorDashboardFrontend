@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Executive Orders by President</h1>
+        <h2>Executive Orders by President</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

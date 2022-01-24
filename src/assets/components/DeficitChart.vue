@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>National Deficit in Billions USD</h1>
+        <h2>National Deficit in Billions USD</h2>
         <div v-if="loading">
             <p>Loading...</p>
         </div>

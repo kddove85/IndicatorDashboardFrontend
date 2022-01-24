@@ -72,5 +72,11 @@ function getFinalApproval() {
   })
 }
 
+function getTemperature() {
+  return axios.get('http://127.0.0.1:8000/api/temperature/').then((response) => {
+    return response.data.data;
+  })
+}
+
 export { getGdp, getCpi, getUnemployment, getImmigration, getDeportation, getDepartmentSpending, getGasPrices,
-    getOrders, getDeficit, getInitialApproval, getFinalApproval};
+    getOrders, getDeficit, getInitialApproval, getFinalApproval, getTemperature};
