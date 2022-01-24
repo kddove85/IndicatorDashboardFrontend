@@ -6,6 +6,19 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
+To install the neccessary components, download and install node.js from here: https://nodejs.org/en/
+
+Next, install the proper dependencies one at a time using npm
+```
+npm install vite
+npm install @vitejs/plugin-vue
+npm install @vue/cli
+npm install @vue/server-renderer
+npm install @vue-router
+```
+
+Note, may need to install vue-router as ```vue-router@next```
+
 To start the application use
 ```
 npm run dev
