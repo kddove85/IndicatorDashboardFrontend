@@ -35,7 +35,7 @@ export default defineComponent({
 
     let series = computed(() => ([
       {
-        name: "Degrees in Celsius",
+        name: "Billions of USD",
         data: dataValues.value,
       },
     ]));
@@ -75,6 +75,94 @@ export default defineComponent({
           }
         },
       },
+      annotations: {
+          xaxis: [
+            {
+              x: 1981,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Reagan'
+              }
+            },
+            {
+              x: 1989,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Bush'
+              }
+            },
+            {
+              x: 1993,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Clinton'
+              }
+            },
+            {
+              x: 2001,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Bush'
+              }
+            },
+            {
+              x: 2009,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Obama'
+              }
+            },
+            {
+              x: 2017,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Trump'
+              }
+            },
+            {
+              x: 2021,
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Biden'
+              }
+            },
+          ]
+        },
     }));
 
     return { type, chartOptions, series, loading };

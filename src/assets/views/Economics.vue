@@ -6,9 +6,10 @@
   </div>
 
   <div class="container">
+    <SpendingChart />
     <div class="row align-items-start">
       <div class="col">
-        <SpendingChart />
+        <CpiChart />
         <br />
       </div>
       <div class="col">

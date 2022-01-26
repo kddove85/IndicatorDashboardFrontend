@@ -77,6 +77,82 @@ export default defineComponent({
           }
         },
       },
+      annotations: {
+          xaxis: [
+            {
+              x: '1981-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Reagan'
+              }
+            },
+            {
+              x: '1989-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Bush'
+              }
+            },
+            {
+              x: '1993-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Clinton'
+              }
+            },
+            {
+              x: '2001-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Bush'
+              }
+            },
+            {
+              x: '2009-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Obama'
+              }
+            },
+            {
+              x: '2017-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Trump'
+              }
+            },
+          ]
+        }
     }));
 
     return { type, chartOptions, series, loading };

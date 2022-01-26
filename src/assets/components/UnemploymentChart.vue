@@ -59,6 +59,106 @@ export default defineComponent({
       fill: {
         opacity: 0.7
       },
+      annotations: {
+          xaxis: [
+            {
+              x: '1981-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Reagan'
+              }
+            },
+            {
+              x: '1989-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Bush'
+              }
+            },
+            {
+              x: '1993-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Clinton'
+              }
+            },
+            {
+              x: '2001-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Bush'
+              }
+            },
+            {
+              x: '2009-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Obama'
+              }
+            },
+            {
+              x: '2017-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Trump'
+              }
+            },
+            {
+              x: '2020-03',
+              borderColor: '#50C878',
+              label: {
+                borderColor: "#50C878",
+                style: {
+                  color: '#fff',
+                  background: "#50C878"
+                },
+                text: 'Covid'
+              }
+            },
+            {
+              x: '2021-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Biden'
+              }
+            },
+          ]
+        }
     }));
 
     return { type, chartOptions, series, loading };
