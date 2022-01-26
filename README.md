@@ -24,3 +24,5 @@ To start the application use
 npm run dev
 ```
 from the root directory. This should launch the frontend at localhost:3000
+
+Get the corresponding backend here: https://github.com/kddove85/indicatordashboard
