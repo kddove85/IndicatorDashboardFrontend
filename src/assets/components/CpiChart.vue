@@ -5,7 +5,7 @@
             <p>Loading...</p>
         </div>
         <div v-else>
-            <LineChart ref="lineRef" :chartData="testData" :options="options" />
+            <LineChart :chartData="testData" :options="options" />
         </div>
     </div>
     <p>Source: Bureau of Labor Statistics</p>
@@ -33,7 +33,6 @@ export default defineComponent({
         dataLabels.value = data.value.map(item => item.date)
         loading.value = false;
     })
-    const lineRef = ref();
 
     const options = ref({
       responsive: true,
@@ -60,7 +59,7 @@ export default defineComponent({
       ],
     }));
 
-    return { testData, lineRef, loading, options };
+    return { testData, loading, options };
   },
 });
 </script>

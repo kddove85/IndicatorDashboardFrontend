@@ -4,11 +4,18 @@
       Climate Indicators
     </h1>
   </div>
-  <TemperatureChart /><br />
+
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col">
+        <TemperatureChart /><br />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import TemperatureChart from '../components/TemperatureChart.vue'
+import TemperatureChart  from '../components/TemperatureChart.vue'
 </script>
 
 <style>

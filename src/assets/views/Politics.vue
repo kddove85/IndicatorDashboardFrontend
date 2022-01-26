@@ -4,9 +4,16 @@
       Political Indicators
     </h1>
   </div>
-  <OrdersChart /><br />
-  <InitialApprovalChart /><br />
-  <FinalApprovalChart /><br/>
+
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col">
+        <OrdersChart /><br />
+        <InitialApprovalChart /><br />
+        <FinalApprovalChart /><br/>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
