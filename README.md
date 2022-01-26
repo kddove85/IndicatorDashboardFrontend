@@ -26,3 +26,6 @@ npm run dev
 from the root directory. This should launch the frontend at localhost:3000
 
 Get the corresponding backend here: https://github.com/kddove85/indicatordashboard
+
+![Capture](https://user-images.githubusercontent.com/8304144/151094191-04d81121-19c3-4bfe-90a1-eb9bf9d514a6.PNG)
+
