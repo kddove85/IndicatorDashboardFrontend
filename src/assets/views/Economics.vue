@@ -6,30 +6,34 @@
   </div>
 
   <div class="container">
+    <br><hr><br>
+    <GdpChart />
+    <br><hr><br>
     <SpendingChart />
+    <br><hr><br>
     <div class="row align-items-start">
       <div class="col">
         <CpiChart />
-        <br />
       </div>
       <div class="col">
-        <CpiChart />
-        <br />
+        <CpiYearChart />
       </div>
     </div>
+    <br><hr><br>
     <GasChart />
-    <br />
+    <br><hr><br />
     <UnemploymentChart />
-    <br />
+    <br><hr><br />
     <DeficitChart />
-    <br />
+    <br>
   </div>
-  <br/>
 
 </template>
 
 <script setup>
+import GdpChart from '../components/GdpChart.vue'
 import CpiChart from '../components/CpiChart.vue'
+import CpiYearChart from '../components/CpiYearChart.vue'
 import UnemploymentChart from '../components/UnemploymentChart.vue'
 import SpendingChart from '../components/SpendingChart.vue'
 import GasChart from '../components/GasChart.vue'

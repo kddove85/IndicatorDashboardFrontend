@@ -1,5 +1,5 @@
 <template>
-  <h2>Change in Inflation Month to Month</h2>
+  <h2>Change in Inflation Year to Year</h2>
   <div v-if="loading">
     <p>Loading...</p>
   </div>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { getCpi } from '../../services/DashboardApi.js';
+import { getCpiYearly } from '../../services/DashboardApi.js';
 import { computed, defineComponent, ref, onMounted } from 'vue';
 import VueApexCharts from "vue3-apexcharts";
 
@@ -26,7 +26,7 @@ export default defineComponent({
     const type = ref("bar");
 
     onMounted(async() => {
-        data.value = await getCpi();
+        data.value = await getCpiYearly();
 
       dataValues.value = data.value.map(item => item.value)
       dataLabels.value = data.value.map(item => item.date)
@@ -52,8 +52,8 @@ export default defineComponent({
         title: {
             text: "Change in Inflation %",
         },
-        max: 2,
-        min: -2
+        max: 10,
+        min: -10
       },
       dataLabels: {
         enabled: false

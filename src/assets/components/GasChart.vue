@@ -151,6 +151,30 @@ export default defineComponent({
                 text: 'Trump'
               }
             },
+            {
+              x: '2020-03',
+              borderColor: '#50C878',
+              label: {
+                borderColor: "#50C878",
+                style: {
+                  color: '#fff',
+                  background: "#50C878"
+                },
+                text: 'Covid'
+              }
+            },
+            {
+              x: '2021-01',
+              borderColor: '#775DD0',
+              label: {
+                borderColor: "#775DD0",
+                style: {
+                  color: '#fff',
+                  background: "#775DD0"
+                },
+                text: 'Biden'
+              }
+            },
           ]
         }
     }));

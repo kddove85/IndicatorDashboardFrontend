@@ -18,6 +18,12 @@ function getCpi() {
   })
 }
 
+function getCpiYearly() {
+  return axios.get('http://127.0.0.1:8000/api/cpi_yearly/').then((response) => {
+    return response.data.data;
+  })
+}
+
 function getUnemployment() {
   return axios.get('http://127.0.0.1:8000/api/unemployment/').then((response) => {
     return response.data.data;
@@ -84,5 +90,5 @@ function getTemperature() {
   })
 }
 
-export { getGdp, getCpi, getUnemployment, getImmigration, getDeportation, getImmigrationDeportation,
+export { getGdp, getCpi, getCpiYearly, getUnemployment, getImmigration, getDeportation, getImmigrationDeportation,
     getDepartmentSpending, getGasPrices, getOrders, getDeficit, getInitialApproval, getFinalApproval, getTemperature};

@@ -1,16 +1,16 @@
 <template>
-  <h2>Change in Inflation Month to Month</h2>
-  <div v-if="loading">
-    <p>Loading...</p>
-  </div>
-  <div v-else>
-    <apexchart :type="type" width="100%" height="300%" :options="chartOptions" :series="series"></apexchart>
-  </div>
-  <p>Source: Bureau of Labor Statistics</p>
+    <h2>Gross Domestic Product</h2>
+    <div v-if="loading">
+      <p>Loading...</p>
+    </div>
+    <div v-else>
+      <apexchart :type="type" width="100%" height="300%" :options="chartOptions" :series="series"></apexchart>
+    </div>
+    <p>Source: U.S. Bureau of Economic Analysis</p>
 </template>
 
 <script>
-import { getCpi } from '../../services/DashboardApi.js';
+import { getGdp } from '../../services/DashboardApi.js';
 import { computed, defineComponent, ref, onMounted } from 'vue';
 import VueApexCharts from "vue3-apexcharts";
 
@@ -26,7 +26,7 @@ export default defineComponent({
     const type = ref("bar");
 
     onMounted(async() => {
-        data.value = await getCpi();
+        data.value = await getGdp();
 
       dataValues.value = data.value.map(item => item.value)
       dataLabels.value = data.value.map(item => item.date)
@@ -35,7 +35,7 @@ export default defineComponent({
 
     let series = computed(() => ([
       {
-        name: "Change in Inflation %",
+        name: "Billions of USD",
         data: dataValues.value,
       },
     ]));
@@ -50,10 +50,8 @@ export default defineComponent({
       },
       yaxis: {
         title: {
-            text: "Change in Inflation %",
+            text: "Billions of USD",
         },
-        max: 2,
-        min: -2
       },
       dataLabels: {
         enabled: false
@@ -80,7 +78,7 @@ export default defineComponent({
       annotations: {
           xaxis: [
             {
-              x: '1981-01',
+              x: '1981-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
@@ -92,7 +90,7 @@ export default defineComponent({
               }
             },
             {
-              x: '1989-01',
+              x: '1989-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
@@ -104,7 +102,7 @@ export default defineComponent({
               }
             },
             {
-              x: '1993-01',
+              x: '1993-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
@@ -116,7 +114,7 @@ export default defineComponent({
               }
             },
             {
-              x: '2001-01',
+              x: '2001-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
@@ -128,7 +126,7 @@ export default defineComponent({
               }
             },
             {
-              x: '2009-01',
+              x: '2009-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
@@ -140,7 +138,7 @@ export default defineComponent({
               }
             },
             {
-              x: '2017-01',
+              x: '2017-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
@@ -152,7 +150,7 @@ export default defineComponent({
               }
             },
             {
-              x: '2020-03',
+              x: '2020-04-01',
               borderColor: '#50C878',
               label: {
                 borderColor: "#50C878",
@@ -164,7 +162,7 @@ export default defineComponent({
               }
             },
             {
-              x: '2021-01',
+              x: '2021-01-01',
               borderColor: '#775DD0',
               label: {
                 borderColor: "#775DD0",
