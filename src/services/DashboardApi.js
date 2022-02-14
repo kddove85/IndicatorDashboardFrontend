@@ -90,5 +90,13 @@ function getTemperature() {
   })
 }
 
+function getEarnings() {
+  return axios.get('http://127.0.0.1:8000/api/earnings/').then((response) => {
+    return response.data.data;
+  })
+}
+
 export { getGdp, getCpi, getCpiYearly, getUnemployment, getImmigration, getDeportation, getImmigrationDeportation,
-    getDepartmentSpending, getGasPrices, getOrders, getDeficit, getInitialApproval, getFinalApproval, getTemperature};
+    getDepartmentSpending, getGasPrices, getOrders, getDeficit, getInitialApproval, getFinalApproval, getTemperature,
+    getEarnings
+};

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      Indicators Home Page
+      Earnings Report
     </h1>
   </div>
 
@@ -17,3 +17,14 @@
 <script setup>
   import EarningsTable from '../components/EarningsTable.vue'
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

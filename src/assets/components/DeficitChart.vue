@@ -102,6 +102,30 @@ export default defineComponent({
               }
             },
             {
+              x: 1991,
+              borderColor: '#50C878',
+              label: {
+                borderColor: "#50C878",
+                style: {
+                  color: '#fff',
+                  background: "#50C878"
+                },
+                text: 'Gulf War Ends'
+              }
+            },
+            {
+              x: 1992,
+              borderColor: '#50C878',
+              label: {
+                borderColor: "#50C878",
+                style: {
+                  color: '#fff',
+                  background: "#50C878"
+                },
+                text: 'Cold War Ends'
+              }
+            },
+            {
               x: 1993,
               borderColor: '#775DD0',
               label: {
@@ -123,6 +147,30 @@ export default defineComponent({
                   background: "#775DD0"
                 },
                 text: 'Bush'
+              }
+            },
+            {
+              x: 2002,
+              borderColor: '#50C878',
+              label: {
+                borderColor: "#50C878",
+                style: {
+                  color: '#fff',
+                  background: "#50C878"
+                },
+                text: 'Afghan War Starts'
+              }
+            },
+            {
+              x: 2008,
+              borderColor: '#50C878',
+              label: {
+                borderColor: "#50C878",
+                style: {
+                  color: '#fff',
+                  background: "#50C878"
+                },
+                text: 'Housing Crash'
               }
             },
             {

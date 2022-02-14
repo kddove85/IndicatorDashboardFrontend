@@ -11,6 +11,11 @@
       </router-link>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link" :to="{ name: 'Earnings'}">
+        Earnings
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link" :to="{ name: 'Climate'}">
         Climate
       </router-link>
